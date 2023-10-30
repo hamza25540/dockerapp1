@@ -3,6 +3,8 @@ pipeline {
     stages{
         stage('Test') {
             steps {
+                sh 'docker stop app1'
+                sh 'docker rm app1'
                 sh 'docker build -t app1 .'
                 sh 'docker run -d -p 5000:5000 --name app1 app1'
             }
