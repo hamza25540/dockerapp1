@@ -4,7 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'ls -a'
-                sh 'cat something.txt'
+                sh 'pwd'
             }
         }
         stage('Build') {
