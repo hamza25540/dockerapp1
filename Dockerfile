@@ -8,4 +8,4 @@ RUN pip install flask
 
 EXPOSE 5000
 
-ENTRYPOINT ["ls", "templates"]
+ENTRYPOINT ["python3", "app.py"]
